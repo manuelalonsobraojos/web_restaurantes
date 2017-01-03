@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block form %}
+{% if loggedIn %}
+	<h2>Bienvenido usuario</h2>
+	<p>Email: <strong>{{email}}</strong></p>
+	<p>Contraseña: <strong>{{password}}</strong></p>
+{% else %}		
+	<h2>Login</h2>
+	<form action="index.html">
+	<input type="text" name="correo" value="Enter Your Email Here...">
+	<input type="text" name="pass" value="Enter Your Password">
+	<input type="submit" value="">
+	</form>
+{% endif %}
+{% endblock %}

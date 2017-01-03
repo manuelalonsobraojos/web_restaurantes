@@ -1,0 +1,31 @@
+	{% extends "index.html" %}
+	{% block body %}
+	<div id="body">
+		<div id="content">
+			<div>
+				<div align="center">
+					<h1>Datos Personales</h1>
+					<ul>
+					<li class="last">
+						<form action="/datos_personales.html" method="POST">
+							<label> 
+								<span>Nombre y Apellidos (*) </span><br>
+								<input type="text" id="nombre" name="nombre" value="{{name}}"/><br>
+							</label>
+							<label> 
+								<span><font color="black">Email (*) </font></span><br>
+								<input type="text" id="email" name="email" value={{email}} readonly><br>
+							</label>
+							<label> 
+								<span><font color="black">Contraseña (*) </font></span><br>
+								<input type="password" id="pass" name="pass" value={{password}}><br>
+							</label>					
+							<input type="submit" value="Modificar datos">
+						</form>
+					</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

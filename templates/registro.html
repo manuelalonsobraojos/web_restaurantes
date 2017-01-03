@@ -1,0 +1,31 @@
+	{% extends "index.html" %}
+	{% block body %}
+	<div id="body">
+		<div id="content">
+			<div>
+				<div align="center">
+					<h1>Registro</h1>
+					<ul>
+					<li class="last">
+						<form action="/registro.html" method="POST">
+							<label> 
+								<span>Nombre y Apellidos (*) </span><br>
+								<input type="text" id="nombre" name="nombre" value=""/><br>
+							</label>
+							<label> 
+								<span><font color="black">Email (*) </font></span><br>
+								<input type="text" id="email" name="email" value=""><br>
+							</label>
+							<label> 
+								<span><font color="black">Contraseña (*) </font></span><br>
+								<input type="password" id="pass" name="pass" value=""><br>
+							</label>					
+							<input type="submit" value="Registrarse">
+						</form>
+					</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
