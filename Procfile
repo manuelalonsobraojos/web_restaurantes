@@ -1,2 +1,2 @@
-web: python hamburgueseria.py 0.0.0.0:5000
+web: gunicorn hamburgueseria:app
 heroku ps:scale web=1
